@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Product {
+    String name;
+    int price;
+    int weight;
+    int deliveryPrice;
+}
+class Beauty extends Product implements DeliveryChargeCalculator
+class Grocery extends Product implements DeliveryChargeCalculator
+class LargeAppliance extends Product implements DeliveryChargeCalculator
+interface DeliveryChargeCalculator
+
+
+@enduml
